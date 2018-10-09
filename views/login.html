@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf-frontend">
+    <meta name="csrf-token" content="MVFOVlFtdzNEMi8kZRslVwQzdhAAPjRVZBweJSYILVwCF3YsAQhFVw==">
+    <title>Login The System</title>
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/layout.css" rel="stylesheet">
+
+</head>
+<body class="signwrapper">
+    <div class="sign-overlay"></div>
+    <div class="signpanel"></div>
+
+    <div class="panel signin">
+        <div class="panel-heading">
+        <h4 class="panel-title">Welcome To XXXXXXX</h4>
+    </div>
+    <div class="panel-body">
+        
+        <div class="or">*_{{message}}_*</div>
+        <form id="login-form" action="login" method="post" role="form">
+        <div class="form-group field-loginform-username required">
+            <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span><input type="text" id="loginform-username" class="form-control" name="username" placeholder="Please enter your username" autofocus aria-required="true"></div>
+            <p class="help-block help-block-error"></p>
+        </div>
+
+        <div class="form-group field-loginform-password required">
+            <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" id="loginform-password" class="form-control" name="password" placeholder="Please enter your password" aria-required="true"></div>
+            <p class="help-block help-block-error"></p>
+        </div>
+
+
+
+        <div class="form-group field-loginform-password required">
+            <p>
+                <img id="authpng" border="1" src="/authpng" witdh="100px" />
+                <a href="javascript:document.getElementById('authpng').src=`authpng?${Math.random()}`;void(0)">看不清楚，换一张</a>
+            </p>
+            <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="text" id="loginform-authcode" class="form-control" name="authcode" placeholder="验证码小写" aria-required="true"></div>
+            <p class="help-block help-block-error"></p>
+        </div>
+        <div class="form-group field-loginform-rememberme">
+            <div class="checkbox">
+                <label for="loginform-rememberme">
+                   
+                </label>
+                <p class="help-block help-block-error"></p>
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-quirk btn-block" name="login-button">Login</button>
+        </div>
+    </div><!-- panel -->
+</body>
+</html>
+
+

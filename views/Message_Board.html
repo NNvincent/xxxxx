@@ -1,0 +1,99 @@
+{{> header}}
+
+
+	<div id="fh5co-contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Message Board</h2>
+				</div>
+			</div>
+
+            <div class="row">
+                <div class="col-md-8">
+                        {{#each message}}                                             
+                    <div class="row">
+                        
+                        <div class="col-md-12 services-inner">
+                            <span><i class="sl-icon-note"></i></span>
+                            <div class="desc">
+                                <h3>{{{name}}}</h3>
+                                <pre>{{{message}}}</pre><br>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{{notice}}}
+                <div class="col-md-4">
+                    <aside class="sidebar">
+                        <div class="row">
+                            <div class="col-md-12 side">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><i class="icon-check"></i><a href="#">Web Design</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Branding &amp; Identity</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Genius Bar</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Workshops and Learning</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Refurbished and Clearance</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Financing</a></li>
+                                    <li><i class="icon-check"></i><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 side">
+                                <h3>Paragraph</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+
+            <!--分割线------------------------ 联系我们 -->
+            <br>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2>Message Post</h2>
+                </div>
+            </div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Message Info.</h3>
+					<ul class="contact-info">
+						<li><i class="sl-icon-map"></i>Magic blue is a so kind people!</li>
+						<li><i class="sl-icon-phone"></i>123456789</li>
+						<li><i class="sl-icon-envelope-open"></i><a href="#">12345@foxmail.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                    <form action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Name" type="text" name="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Email" type="text" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="" cols="30" rows="7" placeholder="Message" name="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input value="Send Message" class="btn btn-primary" type="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{> footer}}
